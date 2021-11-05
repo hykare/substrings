@@ -1,9 +1,9 @@
-dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
+dictionary = %w[below down go going horn how howdy it i low own part partner sit]
 
 def substrings(string, dictionary)
-p string.include? dictionary[0]
-
-
+  dictionary.each do |word|
+    p string.include? word
+  end
 end
 
-substrings("below", dictionary)
+substrings('down', dictionary)
